@@ -32,8 +32,25 @@
           <li class="nav-item">
             <a class="nav-link font-weight-bold" href="<?=base_url();?>home"><i class="fas fa-home"></i> หน้าหลัก</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="<?=base_url();?>#"><i class="fas fa-flask"></i> สินค้า</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-flask"></i> สินค้า
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- Category Menu-->
+              <?php if(is_array($category_menu) == true){ ?>
+              <?php foreach ($category_menu as  $category_menu) {  $category_menu->CategoryID; ?>
+              <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?=$category_menu->Description;?>"
+                class="btn text-secondary" role="group">
+                <?=$category_menu->Description;?>
+              </a>
+              <?php } //end foreach ?>
+              <?php }else{ ?>
+              <a href="" class="bg-dark text-light list-group-item">All Catalog</a>
+              <?php } ?>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link font-weight-bold" href="<?=base_url();?>#"><i class="fas fa-shopping-cart"></i> ขอใบเสนอราคา</a>
@@ -53,14 +70,11 @@
       </div>
     </nav>
 
+  </header>
+  <body>
     <!-- Masthead -->
       <div class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">
         <a href="<?=base_url();?>home"><img class="img-fluid d-block mx-auto" src="<?=base_url('application/assets/img/logo/');?>stn.jpg" alt="" style="max-height:400px; max-width:400px"></a>
       </div>
       <!-- end Masthead -->
       <br><hr>
-
-  </header>
-
-  <body>
-    

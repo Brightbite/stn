@@ -1,3 +1,35 @@
+<br><br><br><hr>
+<!--carousel feature brands-->
+  <div class="col-md-12 text-center"><h3 class="text-info font-weight-bold ">Feature Brands</h3></div>
+  <div class="container-fluid">
+      <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="4000" style="max-height:150px; margin:0 auto">
+          <div class="carousel-inner row w-100 mx-auto" role="listbox">
+            <div class="carousel-item col-md-3 active">
+                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>ajax.jpg" alt="slide 1">
+            </div>
+            <?php if(isset($feature_brand) == true){?>
+              <?php foreach ($feature_brand as $brand){ $brand->BrandID;?>
+            <div class="carousel-item col-md-3">
+                <img class="img-fluid mx-auto d-block" src="<?=$brand->BrandPicture;?>" alt="<?=$brand->BrandID;?>">
+            </div>
+            <!-- end foreach -->
+          <?php } ?>
+          <!-- end  if -->
+        <?php }else { ?>
+        <h2>no images</h2>
+        <?php } ?>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+              <i class="fa fa-chevron-left fa-lg text-muted"></i>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+              <i class="fa fa-chevron-right fa-lg text-muted"></i>
+              <span class="sr-only">Next</span>
+          </a>
+      </div>
+  </div>
+  <!-- end of carousel -->
     <!-- Footer -->
     <br><br><br><hr>
     <nav class="navbar navbar-expand-md navbar-dark   bg-light">
@@ -21,9 +53,9 @@
               </li>
             </ul>
             <p class="text-muted small mb-4 mb-lg-0">copyright 2018 &copy; S.T.N. 1508 Trading LTD., Part.</p>
-            <p class="text-muted small mb-4 mb-lg-0">Opening hour: Mon - Fri 9:00am - 17:00pm</p>
-            <p class="text-muted small mb-4 mb-lg-0">Tel: +66 (0) 2 736 1812, Tel: +66 (0) 2 736 1813, Fax: +66 (0) 2 736 1815 </p>
-            <p class="text-muted small mb-4 mb-lg-0">Email: stn1508@hotmail.com, web@stn1508.com</p>
+            <p class="text-muted small mb-4 mb-lg-0">เวลาทำการ: วันจันทร์ - วันศุกร์ 9:00น. - 17:00น.</p>
+            <p class="text-muted small mb-4 mb-lg-0">โทร: +66 (0) 2 736 1812, โทร: +66 (0) 2 736 1813, แฟกซ์: +66 (0) 2 736 1815 </p>
+            <p class="text-muted small mb-4 mb-lg-0">อีเมล: stn1508@hotmail.com, web@stn1508.com</p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
@@ -31,20 +63,6 @@
                 <a href="#">
                   <div style="color:blue">
                     <i class="fab fa-facebook-square fa-3x"></i>
-                  </div>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <div style="color:light-blue">
-                    <i class="fab fa-twitter fa-3x"></i>
-                  </div>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <div style="color:brown">
-                    <i class="fab fa-instagram fa-3x"></i>
                   </div>
                 </a>
               </li>
@@ -62,6 +80,7 @@
 
       </div>
     </nav>
+
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

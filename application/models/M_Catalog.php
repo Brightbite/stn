@@ -13,7 +13,6 @@ class M_Catalog extends CI_Model
                            Description
                     FROM Category
                     ORDER BY CategoryID ASC";
-
             $query = $this->db->query($SQL);
             if ($query->num_rows() > 0) {
               return $query->result();
@@ -26,7 +25,6 @@ class M_Catalog extends CI_Model
             $SQL = "SELECT Description
                     FROM Category
                     WHERE CategoryID = '$CatalogID'";
-
             $query = $this->db->query($SQL);
             if ($query->num_rows() > 0) {
               return $query->row();
@@ -35,6 +33,35 @@ class M_Catalog extends CI_Model
             }
       }
 
+      public function mProduct($CatalogID){
+            $SQL = "SELECT ProductID,
+                           ProductName,
+                           ProductDesc,
+                           CategoryID,
+                           ProductPicture
+                     FROM  product
+                     WHERE CategoryID = '$CatalogID'";
+            $query = $this->db->query($SQL);
+            if ($query->num_rows() > 0) {
+              return $query->result();
+            }else{
+              return 'empty';
+            }
+          }
+
+      public function mBrand(){
+          $SQL = "SELECT BrandID,
+                         BrandName,
+                         BrandDesc,
+                         BrandPicture
+                   FROM  brand";
+          $query = $this->db->query($SQL);
+          if ($query->num_rows() > 0){
+            return $query->result();
+          }else {
+            return 'empty';
+          }
+      }
 
       // public function mBeautyCatalog(){
       //       $SQL = "SELECT *

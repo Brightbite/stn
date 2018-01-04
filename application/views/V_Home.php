@@ -40,16 +40,16 @@
 
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">Analytics</a>
+            <a class="nav-link " href="#">ขอใบเสนอราคา</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Export</a>
+            <a class="nav-link" href="#">ติดต่อสอบถาม</a>
           </li>
         </ul>
 
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
-            <a class="nav-link" href="#">Nav item</a>
+            <a class="nav-link" href="#">ค้นหา</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Nav item again</a>
@@ -283,48 +283,8 @@
 <!-- end whole main container -->
 
   <!-- end main content -->
-  <br><br><br><hr>
-<!--carousel feature brands-->
-  <div class="col-md-12 text-center"><h3 class="text-info font-weight-bold ">Feature Brands</h3></div>
-  <div class="container-fluid">
-      <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="4000" style="max-height:150px; margin:0 auto">
-          <div class="carousel-inner row w-100 mx-auto" role="listbox">
-            <div class="carousel-item col-md-3 active">
-                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>ajax.jpg" alt="slide 1">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>fluka.jpg" alt="slide 2">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>IKA.jpg" alt="slide 3">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>Merck.jpg" alt="slide 4">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>PGL.jpg"  alt="slide 5">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>sigma.jpg" alt="slide 6">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>TOWA.jpg" alt="slide 7">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>GLM.jpg" alt="slide 7">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-              <i class="fa fa-chevron-left fa-lg text-muted"></i>
-              <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-              <i class="fa fa-chevron-right fa-lg text-muted"></i>
-              <span class="sr-only">Next</span>
-          </a>
-      </div>
-  </div>
-  <!-- end of carousel -->
+
+
 
   <!-- Javascript -->
   <script>

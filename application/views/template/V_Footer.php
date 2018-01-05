@@ -5,7 +5,9 @@
       <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="4000" style="max-height:150px; margin:0 auto">
           <div class="carousel-inner row w-100 mx-auto" role="listbox">
             <div class="carousel-item col-md-3 active">
-                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>ajax.jpg" alt="slide 1">
+              <a href="<?=base_url();?>home">
+                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>stn.jpg" alt="slide 1">
+              </a>
             </div>
             <?php if(isset($feature_brand) == true){?>
               <?php foreach ($feature_brand as $brand){ $brand->BrandID;?>
@@ -23,11 +25,11 @@
         <?php } ?>
           </div>
           <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-              <i class="fa fa-chevron-left fa-lg text-muted"></i>
+              <i class="fas fa-angle-left text-muted"></i>
               <span class="sr-only">Previous</span>
           </a>
           <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-              <i class="fa fa-chevron-right fa-lg text-muted"></i>
+              <i class="fas fa-angle-right text-muted"></i>
               <span class="sr-only">Next</span>
           </a>
       </div>

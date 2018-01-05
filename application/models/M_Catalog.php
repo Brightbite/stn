@@ -71,11 +71,14 @@ class M_Catalog extends CI_Model
       }
 
       public function mBrand(){
-          $SQL = "SELECT BrandID,
-                         BrandName,
-                         BrandDesc,
-                         BrandPicture
-                   FROM  brand";
+          $SQL = "SELECT BD.BrandID,
+                  			 BD.BrandName,
+                         BD.BrandDesc,
+                         BD.BrandPicture,
+                  			 PD.ProductName,
+                         PD.ProductID
+                  FROM  brand BD, product PD
+                  WHERE BD.BrandName = PD.ProductName";
           $query = $this->db->query($SQL);
           if ($query->num_rows() > 0){
             return $query->result();
@@ -84,44 +87,5 @@ class M_Catalog extends CI_Model
           }
       }
 
-      // public function mBeautyCatalog(){
-      //       $SQL = "SELECT *
-      //               FROM category_beauty
-      //               ORDER BY CategoryName ASC";
-      //
-      //       $query = $this->db->query($SQL);
-      //       if ($query->num_rows() > 0) {
-      //         return $query->result();
-      //       }else{
-      //         return 'empty';
-      //       }
-      // }
-      //
-      // public function mSearch($search){
-      //
-      //        if(isset($search)){
-      //           if ($search !='') {
-      //               $search = $search;
-      //           }else{
-      //               $search = '';
-      //           }
-      //        }else{
-      //              $search = '';
-      //        }
-      //
-      //        if ($search != '') {
-      //
-      //            //SQL Statement
-      //            $SQL = "SELECT * FROM product_beauty WHERE ProductName LIKE '%$search%'";
-      //
-      //            // echo $SQL;
-      //            $query = $this->db->query($SQL);
-      //            if ($query->num_rows() > 0) {
-      //              return $query->result();
-      //            }else{
-      //              return 'empty';
-      //            }
-      //      }else{ return 'empty'; }
-      // }
 }
  ?>

@@ -17,7 +17,9 @@
                       'category_menu' => $category_menu
       );
       $index = array('category_menu' => $category_menu);
-      $footer = array('feature_brand' => $feature_brand);
+      $footer = array('feature_brand' => $feature_brand,
+                      'product_detail' => $product_detail
+                      );
 
       $this->load->view('template/V_Header',$header);
       $this->load->view('V_Home',$index);

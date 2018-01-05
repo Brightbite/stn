@@ -10,7 +10,10 @@
             <?php if(isset($feature_brand) == true){?>
               <?php foreach ($feature_brand as $brand){ $brand->BrandID;?>
             <div class="carousel-item col-md-3">
+              <a href="<?=base_url();?>product_detail/<?=$brand->ProductID;?>">
+                <input type="hidden" value="<?=$brand->ProductID;?>">
                 <img class="img-fluid mx-auto d-block" src="<?=$brand->BrandPicture;?>" alt="<?=$brand->BrandID;?>">
+              </a>
             </div>
             <!-- end foreach -->
           <?php } ?>

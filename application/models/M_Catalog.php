@@ -22,9 +22,11 @@ class M_Catalog extends CI_Model
       }
 
       public function mCategoryDesc($CatalogID){
-            $SQL = "SELECT Description
-                    FROM Category
-                    WHERE CategoryID = '$CatalogID'";
+            $SQL = "SELECT CategoryId,
+                           CategoryName,
+                           Description
+                    FROM   Category
+                    WHERE  CategoryID = '$CatalogID'";
             $query = $this->db->query($SQL);
             if ($query->num_rows() > 0) {
               return $query->row();
@@ -48,6 +50,25 @@ class M_Catalog extends CI_Model
               return 'empty';
             }
           }
+
+      public function mProductDetail($ProductID){
+        $SQL = "SELECT PD.ProductID,
+                       PD.ProductName,
+                       PD.ProductDesc,
+                       PD.CategoryID,
+                       PD.ProductPicture,
+                       CT.CategoryID,
+                       CT.CategoryName,
+                       CT.Description
+                FROM   product PD, category CT
+                WHERE  PD.ProductID = '$ProductID' AND CT.CategoryID = PD.CategoryID";
+        $query = $this->db->query($SQL);
+        if ($query->num_rows() > 0){
+          return $query->row();
+        }else {
+          return 'empty';
+        }
+      }
 
       public function mBrand(){
           $SQL = "SELECT BrandID,

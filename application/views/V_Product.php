@@ -22,9 +22,9 @@
                       <!-- Category Menu-->
                       <?php if(is_array($category_menu) == true){ ?>
                       <?php foreach ($category_menu as  $category_menu) {  $category_menu->CategoryID; ?>
-                        <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?php echo $category_menu->Description;?>"
+                        <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?php echo $category_menu->CategoryName;?>"
                           class="btn bg-light text-info" role="group">
-                          <?=$category_menu->Description;?>
+                          <?=$category_menu->CategoryName;?>
                         </a>
                       <?php } //end foreach ?>
                       <?php }else{ ?>
@@ -40,7 +40,7 @@
             <a class="nav-link " href="#">ขอใบเสนอราคา</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ติดต่อสอบถาม</a>
+            <a class="nav-link" href="<?=base_url();?>contact">ติดต่อสอบถาม</a>
           </li>
         </ul>
 
@@ -80,7 +80,7 @@
     <br><br>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4"><?=$category_desc->Description?></h1>
+        <h1 class="display-4"><?=$category_desc->CategoryName?></h1>
         <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
       </div>
     </div>
@@ -91,11 +91,14 @@
       <?php if(is_array($show_product) == true){ ?>
       <?php foreach ($show_product as  $show) {  $show->CategoryID; ?>
         <div class="card" style="width: 14rem;">
-          <img class="card-img-top"  src="<?=$show->ProductPicture;?>" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
+          <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>">
+            <input type="hidden" value="<?=$show->ProductID;?>">
+            <img class="card-img-top"  src="<?=$show->ProductPicture;?>" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
+          </a>
           <div class="card-body">
             <h5 class="card-title">เคมีภัณฑ์ <?=$show->ProductName;?></h5>
             <p class="card-text">เคมีภัณฑ์คุณภาพจาก <?=$show->ProductDesc;?></p>
-            <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
+            <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
           </div>
         </div>
       <?php } //end foreach ?>

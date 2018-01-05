@@ -43,7 +43,7 @@
             <a class="nav-link " href="#">ขอใบเสนอราคา</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ติดต่อสอบถาม</a>
+            <a class="nav-link" href="<?=base_url();?>contact">ติดต่อสอบถาม</a>
           </li>
         </ul>
 

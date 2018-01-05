@@ -9,6 +9,10 @@ $route['translate_uri_dashes'] = FALSE;
 $route['home'] = 'C_Home/index';
 
 
-//products
+//product
 $route['product'] = 'C_Product/index';
 $route['product_by_catalog/(:any)/(:any)']   = 'C_Product/Catalog/$1/$2';
+$route['product_detail/(:any)'] = 'C_Product/Detail/$1';
+
+//contact
+$route['contact'] = 'C_Contact/index';

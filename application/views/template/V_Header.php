@@ -40,9 +40,9 @@
               <!-- Category Menu-->
               <?php if(is_array($category_menu) == true){ ?>
               <?php foreach ($category_menu as  $category_menu) {  $category_menu->CategoryID; ?>
-              <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?=$category_menu->Description;?>"
+              <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?=$category_menu->CategoryName;?>"
                 class="btn text-secondary" role="group">
-                <?=$category_menu->Description;?>
+                <?=$category_menu->CategoryName;?>
               </a>
               <?php } //end foreach ?>
               <?php }else{ ?>
@@ -56,7 +56,7 @@
             <a class="nav-link font-weight-bold" href="<?=base_url();?>#"><i class="fas fa-shopping-cart"></i> ขอใบเสนอราคา</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="<?=base_url();?>#"><i class="fas fa-phone"></i> ติดต่อ</a>
+            <a class="nav-link font-weight-bold" href="<?=base_url();?>contact"><i class="fas fa-phone"></i> ติดต่อ</a>
           </li>
           <li class="nav-item">
           <form method="post" action="<?php echo base_url();?>search">

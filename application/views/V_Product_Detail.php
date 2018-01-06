@@ -88,7 +88,6 @@
             <h3 class="text-info card-title"><?php echo $product_detail->ProductName;?> </h3><hr>
             <h6 class="text-muted text-white">Product ID# <?php echo $product_detail->ProductID;?></h6>
             <h7 class="text-muted text-white">Category: <?php echo $product_detail->CategoryName;?></h7><br><br>
-
     </div>
     <!-- end first row  -->
 

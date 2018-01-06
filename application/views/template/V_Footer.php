@@ -37,7 +37,7 @@
   <!-- end of carousel -->
     <!-- Footer -->
     <br><br><br><hr>
-    <nav class="navbar navbar-expand-md navbar-dark   bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-light">
       <div class="container">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
             <ul class="list-inline mb-2">
@@ -60,7 +60,7 @@
             <p class="text-muted small mb-4 mb-lg-0">copyright 2018 &copy; S.T.N. 1508 Trading LTD., Part.</p>
             <p class="text-muted small mb-4 mb-lg-0">เวลาทำการ: วันจันทร์ - วันศุกร์ 9:00น. - 17:00น.</p>
             <p class="text-muted small mb-4 mb-lg-0">โทร: +66 (0) 2 736 1812, โทร: +66 (0) 2 736 1813, แฟกซ์: +66 (0) 2 736 1815 </p>
-            <p class="text-muted small mb-4 mb-lg-0">อีเมล: stn1508@hotmail.com, web@stn1508.com</p>
+            <p class="text-muted small mb-4 mb-lg-0">อีเมล: stn1508@hotmail.com, stn1508web@gmail.com</p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">

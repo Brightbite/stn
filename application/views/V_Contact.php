@@ -74,16 +74,44 @@
           </li>
         </ul>
       </nav>
-  <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
+
   <!-- main content -->
-    <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-4">Address</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4 text-dark ">ห้างหุ้นส่วนจำกัด เอส.ที.เอ็น.(1508) เทรดดิ้ง</h1>
+      <hr class="my-4">
+      <p class="lead">รายละเอียด</p>
+    </div>
+    <div class="row">
+      <div class="col-md-7"><br>
+        <h2 class="text-info card-title">รายละเอียดที่ตั้งสำนักงาน</h3><hr>
+        <iframe
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwfq66xdhHTERNrmmuTMoHfc&key=AIzaSyAyrq1E46Brt0-e7SX9woDiYFDOZi9qyaQ"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="col-md-5 bg-light"><br>
+          <h2 class="text-info card-title">รายละเอียดช่องทางการติดต่อ</h3><hr><br>
+          <h3 class="text-dark"><i class="fas fa-phone text-primary"></i> โทร:  +66 (0) 2 736 1812</h3>
+          <h3 class="text-dark"><i class="fas fa-phone text-primary"></i> โทร:  +66 (0) 2 736 1813</h3><hr><br>
+          <h3 class="text-dark"><i class="fas fa-fax text-success"></i> แฟกซ์: +66 (0) 2 736 1815</h3><hr><br>
+          <h4 class="text-dark"><i class="far fa-envelope text-warning"></i> อีเมล: stn1508@hotmail.com</h4>
+          <h4 class="text-dark"><i class="far fa-envelope text-warning"></i> อีเมล: stn1508web@gmail.com</h4><hr><br>
+          <h4 class="text-dark"><i class="far fa-calendar-alt text-danger"></i> วันทำการ: วันจันทร์ - วันศุกร์ </h4>
+          <h4 class="text-dark"><i class="far fa-clock text-danger"></i> เวลาทำการ: 9:00น. - 17:00น.</h4><hr><br>
+            <a href="#">
+                <h4 class="text-dark"><i class="fab fa-facebook-square fa-3x text-primary"></i> Facebook page: STN1508</h4><br>
+            </a>
+            <a href="#">
+                <h4 class="text-dark"><i class="fab fa-line fa-3x text-success"></i> Line ID: STN1508</h4>
+            </a>
       </div>
     </div>
-  </main>
+  </div>
   <!-- end main container -->
   </div>
   <!-- end main row -->
@@ -95,11 +123,6 @@
 
 
   <!-- Javascript -->
-  <script>
-
-
-
-
-
-
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyrq1E46Brt0-e7SX9woDiYFDOZi9qyaQ&callback=initMap">
   </script>

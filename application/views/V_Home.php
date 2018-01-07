@@ -1,7 +1,7 @@
 <!-- <body> -->
 <div class="container-fluid">
     <div class="row">
-      <nav class="col-sm-2 col-md-2 d-none d-sm-block bg-light sidebar">
+      <nav class="col-sm-2 d-none d-sm-block bg-light sidebar">
         <ul class="nav nav-pills flex-column">
 
           <li class="nav-item">
@@ -37,10 +37,6 @@
                 </div>
               </div>
             </div>
-
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">ขอใบเสนอราคา</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?=base_url();?>contact">ติดต่อสอบถาม</a>
@@ -79,14 +75,14 @@
   <!-- main content -->
   <div class="container">
 
-    <div class="jumbotron">
-      <h1 class="display-4">กรดพิคริก!</h1>
+    <div class="jumbotron bg-info text-light">
+      <h1 class="display-4">Picric acid</h1>
       <img class="card-img float-right" src="<?=base_url('application/assets/img/product/');?>merck1.jpg" alt="Card image" style="max-height:1149px; max-width:270px">
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <p class="lead">การใช้ประโยชน์: สีย้อม สารกำจัดเชื้อรา สารกัดทองแดงและสารตัวกลางในกระบวนการผลิต metal picrates ใช้ในกระบวนการผลิตของผลิตภัณฑ์หนัง แบตเตอรี่ แก้วชนิดมีสี สารย้อมสีสิ่งทอชนิดติดทนนานและอีมัลชั่นที่ใช้ในงานถ่ายภาพ [HSDB]</p>
       <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p>พร้อมใบรับรอง</p>
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button">ติดต่อสอบถามเพิ่มเติม...</a>
       </p>
     </div>
 

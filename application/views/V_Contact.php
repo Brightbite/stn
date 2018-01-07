@@ -1,11 +1,10 @@
 <!-- <body> -->
 <div class="container-fluid">
     <div class="row">
-      <nav class="col-sm-2 col-md-2 d-none d-sm-block bg-light sidebar">
+      <nav class="col-sm-2 d-none d-sm-block bg-light sidebar">
         <ul class="nav nav-pills flex-column">
-
           <li class="nav-item">
-            <a class="nav-link active" href="<?=base_url();?>home">หน้าหลัก</a>
+            <a class="nav-link " href="<?=base_url();?>home">หน้าหลัก</a>
           </li>
 
           <li class="nav-item">
@@ -40,10 +39,7 @@
 
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">ขอใบเสนอราคา</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?=base_url();?>contact">ติดต่อสอบถาม</a>
+            <a class="nav-link active" href="<?=base_url();?>contact">ติดต่อสอบถาม</a>
           </li>
         </ul>
 
@@ -76,7 +72,7 @@
       </nav>
 
   <!-- main content -->
-  <div class="container">
+  <div class="container col-sm-8">
       <!-- <div class="py-5 bg-image-full" style="background-image: url('<?=base_url();?>application/assets/img/etc/contact2.jpg'); height:200px;">
       </div> -->
       <div class="py-6 bg-image-full jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/contact2.jpg'); height:200px;">
@@ -116,7 +112,7 @@
             <label for="comment">เรื่อง</label>
             <input type="text" name="customerSubject" id="customerSubject" class="form-control" required  placeholder="เรื่อง" maxlength="100"><br>
             <label for="message">ข้อความ:</label>
-            <textarea class="form-control" rows="5" id="customerMessage"></textarea><br><hr>
+            <textarea class="form-control" rows="5" id="customerMessage" placeholder="เช่น: CAS-Number หรือ CAS Registry Number ของผลิตภัณฑ์ที่ท่านต้องการ"></textarea><br><hr>
             <input type="button" value="ส่งข้อความ" class="btn btn-primary btn-lg btn-block" id="btn-send-message">
           </form>
           <br><br>

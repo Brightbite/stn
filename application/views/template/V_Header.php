@@ -8,6 +8,7 @@
     <meta name="keywords" content="<?=$keywords;?>">
     <meta name="description" content="<?=$description?>">
     <meta name="author" content="STN">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>bootstrap.css">
     <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>bootstrap.min.css">
     <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>bootstrap-grid.css">
@@ -53,10 +54,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="<?=base_url();?>#"><i class="fas fa-shopping-cart"></i> ขอใบเสนอราคา</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-weight-bold" href="<?=base_url();?>contact"><i class="fas fa-phone"></i> ติดต่อ</a>
+            <a class="nav-link font-weight-bold" href="<?=base_url();?>contact"><i class="fas fa-phone"></i> ติดต่อ / <i class="fas fa-shopping-cart"></i> ขอใบเสนอราคา</a>
           </li>
           <li class="nav-item">
           <form method="post" action="<?php echo base_url();?>search">
@@ -73,7 +71,7 @@
   </header>
   <body>
     <!-- Masthead -->
-      <div class=" py-5 bg-image-full" style="background-image: url('<?=base_url();?>application/assets/img/etc/downtown.jpg'); height:250px;">
+      <div class=" py-5 bg-image-full " style="background-image: url('<?=base_url();?>application/assets/img/etc/downtown.jpg'); height:250px;">
         <a href="<?=base_url();?>home"><img class="img-fluid d-block mx-auto" src="<?=base_url('application/assets/img/logo/');?>stn.jpg" alt="" style="max-height:400px; max-width:400px;"></a>
       </div>
       <!-- end Masthead -->

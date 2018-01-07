@@ -35,12 +35,11 @@
                 </div>
               </div>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link " href="#">ขอใบเสนอราคา</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="<?=base_url();?>contact">ติดต่อสอบถาม</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ค้นหา</a>
           </li>
         </ul>
 
@@ -97,7 +96,7 @@
           </a>
           <div class="card-body">
             <h5 class="card-title">เคมีภัณฑ์ <?=$show->ProductName;?></h5>
-            <p class="card-text">เคมีภัณฑ์คุณภาพจาก <?=$show->ProductDesc;?></p>
+            <p class="card-text">เคมีภัณฑ์คุณภาพ <?=mb_substr($show->ProductDesc,0,150,'utf-8');?>...</p>
             <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
           </div>
         </div>

@@ -35,12 +35,11 @@
                 </div>
               </div>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link " href="#">ขอใบเสนอราคา</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="<?=base_url();?>contact">ติดต่อสอบถาม</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ค้นหา</a>
           </li>
         </ul>
 
@@ -85,9 +84,12 @@
     <div class="col-md-4">
       <!-- <div class="card-body"> -->
           <br><br> <br><br>
-            <h3 class="text-info card-title"><?php echo $product_detail->ProductName;?> </h3><hr>
-            <h6 class="text-muted text-white">Product ID# <?php echo $product_detail->ProductID;?></h6>
-            <h7 class="text-muted text-white">Category: <?php echo $product_detail->CategoryName;?></h7><br><br>
+            <h1 class="text-primary"><?=$product_detail->ProductName;?> </h3><hr>
+            <h6 class="text-muted text-white">Product ID# <?=$product_detail->ProductID;?></h6>
+            <h7 class="text-muted text-white">Category: <?=$product_detail->CategoryName;?></h7><br><br>
+            <a class="btn btn-dark" href="<?=base_url();?>contact">ติดต่อสอบถามเพิ่มเติม</a><br><br>
+            <h4 class="text-info">รายละเอียดสินค้า</h4><hr>
+            <p class="text-secondary"><?=$product_detail->ProductDesc;?></P>
     </div>
     <!-- end first row  -->
 

@@ -16,3 +16,4 @@ $route['product_detail/(:any)'] = 'C_Product/Detail/$1';
 
 //contact
 $route['contact'] = 'C_Contact/index';
+$route['message'] = 'C_Contact/message';

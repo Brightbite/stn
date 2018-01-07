@@ -74,7 +74,7 @@
   <body>
     <!-- Masthead -->
       <div class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1076');">
-        <a href="<?=base_url();?>home"><img class="img-fluid d-block mx-auto" src="<?=base_url('application/assets/img/logo/');?>stn.jpg" alt="" style="max-height:400px; max-width:400px"></a>
+        <a href="<?=base_url();?>home"><img class="img-fluid d-block mx-auto" src="<?=base_url('application/assets/img/logo/');?>stn.jpg" alt="" style="max-height:400px; max-width:400px;"></a>
       </div>
       <!-- end Masthead -->
       <br><hr>

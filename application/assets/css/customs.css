@@ -5,6 +5,7 @@ button {
 input {
   cursor: pointer;
 }
+/* footer carousel */
 @media (min-width: 768px) {
 
     /* show 3 items */
@@ -72,3 +73,4 @@ input {
     }
 
 }
+/* end footer carousel */

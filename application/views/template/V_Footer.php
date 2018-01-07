@@ -37,7 +37,7 @@
   <!-- end of carousel -->
     <!-- Footer -->
     <br><br><br><hr>
-    <nav class="navbar navbar-expand-md navbar-dark bg-light">
+    <nav class="navbar navbar-expand-md bg-light">
       <div class="container">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
             <ul class="list-inline mb-2">

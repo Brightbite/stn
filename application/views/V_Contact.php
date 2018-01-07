@@ -87,7 +87,7 @@
               </div>
           </div>
       </div>
-
+ <!-- message box -->
     <div class="row">
       <div class="col-md-7"><br>
         <h2 class="text-info">ส่งข้อความติดต่อสอบถาม</h2><hr>
@@ -120,7 +120,9 @@
             <input type="button" value="ส่งข้อความ" class="btn btn-primary btn-lg btn-block" id="btn-send-message">
           </form>
           <br><br>
-        <h2 class="text-info card-title">ที่ตั้งสำนักงาน</h3><hr>
+    <!-- address and map -->
+        <h2 class="text-info card-title">ที่ตั้งสำนักงาน</h2><hr>
+        <p class="text-muted card-title">15/1 ซอย กรุงเทพกรีฑา 33 <br>เขต สะพานสูง <br>แขวง สะพานสูง<br> กรุงเทพฯ 10250"</p>
         <iframe
           width="635"
           height="450"
@@ -130,6 +132,7 @@
           allowfullscreen>
         </iframe>
       </div>
+    <!-- contact detail -->
       <div class="col-md-5 bg-light"><br>
           <h2 class="text-info card-title">ช่องทางการติดต่อ</h3><hr><br>
           <h4 class="text-dark"><i class="fas fa-phone text-primary"></i> โทร:  +66 (0) 2 736 1812</h4>

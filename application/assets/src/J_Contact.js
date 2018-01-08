@@ -64,7 +64,7 @@ function leave_message(){
         $('#customerTel').val('');
         $('#customerSubject').val('');
         $('#customerMessage').val('');
-        alert('ข้อความของคุณถูกส่งเรียบร้อย')
+        alert('ข้อความของคุณถูกส่งเรียบร้อย');
       }
     })
     .fail(function(jqXHR, textStatus){

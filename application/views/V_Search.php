@@ -7,7 +7,7 @@
             <a class="nav-link" href="<?=base_url();?>home">หน้าหลัก</a>
           </li>
             <li class="nav-item">
-              <a class="nav-link active"
+              <a class="nav-link"
                 data-toggle="collapse"
                 data-target="#navbarToggleExternalContent"
                 aria-controls="navbarToggleExternalContent"
@@ -56,33 +56,45 @@
               </a>
         </p><hr>
         <p class="text-center"><a href="<?=base_url();?>contact#map"><button class="btn btn-outline-info text-center"><i class="fas fa-map-marker-alt"></i> แผนที่บริษัท STN</button></a></P>
-        <p class="text-center"><a href="<?=base_url();?>contact#message"><button class="btn btn-outline-success text-center"><i class="fas fa-map-marker-alt"></i> ส่งข้อความติดต่อบริษัท STN</button></a></P>  
+        <p class="text-center"><a href="<?=base_url();?>contact#message"><button class="btn btn-outline-success text-center"><i class="fas fa-map-marker-alt"></i> ส่งข้อความติดต่อบริษัท STN</button></a></P>
       </nav>
-
+    <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
 
   <!-- main content -->
+  <div class="container">
+
 
     <br><br>
-
+    <div class="jumbotron">
+      <h1 class="display-4">ผลการค้นหา</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+    </div>
 
     <!-- first row -->
-    <div class="col-md-5"><br>
-        <img class="img img-responsive" src="<?=$product_detail->ProductPicture;?>" alt="" style="width:100%;max-width:680px; height:100%; max-height:720px; object-fit: scale-down;">
-    </div>
-    <div class="col-md-4">
-      <!-- <div class="card-body"> -->
-          <br><br> <br><br>
-            <h1 class="text-primary"><?=$product_detail->ProductName;?> </h3><hr>
-            <h6 class="text-muted text-white">Product ID# <?=$product_detail->ProductID;?></h6>
-            <h7 class="text-muted text-white">Category: <?=$product_detail->CategoryName;?></h7><br><br>
-            <a class="btn btn-dark" href="<?=base_url();?>contact">ติดต่อสอบถามเพิ่มเติม</a><br><br>
-            <h4 class="text-info">รายละเอียดสินค้า</h4><hr>
-            <p class="text-secondary"><?=$product_detail->ProductDesc;?></P>
+    <div class="row">
+      <!-- Category Menu-->
+      <?php if(is_array($search_product) == true){ ?>
+      <?php foreach ($search_product as  $search) {  $search->CategoryID; ?>
+        <div class="card" style="width: 14rem;">
+          <a href="<?=base_url();?>product_detail/<?=$search->ProductID;?>">
+            <input type="hidden" value="<?=$search->ProductID;?>">
+            <img class="card-img-top"  src="<?=$search->ProductPicture;?>" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">เคมีภัณฑ์ <?=$search->ProductName;?></h5>
+            <p class="card-text">เคมีภัณฑ์คุณภาพ <?=mb_substr($search->ProductDesc,0,150,'utf-8');?>...</p>
+            <a href="<?=base_url();?>product_detail/<?=$search->ProductID;?>" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
+          </div>
+        </div>
+      <?php } //end foreach ?>
+      <?php }else{ ?>
+        <h2 class="text-dark">ไม่พบสินค้าที่ท่านค้นหา กรุณาลองกรอกข้อมูลอื่น หรือ <a href="<?=base_url();?>contact"><button class="btn btn-info"><i class="fas fa-phone"></i> ติดต่อบริษัท STN</button></a>
+      <?php } ?>
     </div>
     <!-- end first row  -->
-
     <br><br>
-
+  </main>
   <!-- end main container -->
   </div>
   <!-- end main row -->

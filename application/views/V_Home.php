@@ -39,36 +39,27 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?=base_url();?>contact">ติดต่อสอบถาม</a>
+            <a class="nav-link" href="<?=base_url();?>contact">ติดต่อ</a>
           </li>
-        </ul>
-
-        <ul class="nav nav-pills flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#">ค้นหา</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nav item again</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">One more nav</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Another nav item</a>
-          </li>
-        </ul>
-
-        <ul class="nav nav-pills flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nav item again</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">One more nav</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Another nav item</a>
-          </li>
-        </ul>
+        </ul><br><hr>
+        <p>
+            <p class="text-muted text-center">ช่องทางการติดต่อ</p>
+            <p class="text-muted text-center"><i class="fas fa-phone text-primary"></i> โทร:  +66 (0) 2 736 1812</p>
+            <p class="text-muted text-center"><i class="fas fa-phone text-primary"></i> โทร:  +66 (0) 2 736 1813</p>
+            <p class="text-muted text-center"><i class="fas fa-fax text-success"></i> แฟกซ์: +66 (0) 2 736 1815</p>
+            <p class="text-muted text-center"><i class="far fa-envelope text-warning"></i> อีเมล: stn1508@hotmail.com</p>
+            <p class="text-muted text-center"><i class="far fa-envelope text-warning"></i> อีเมล: stn1508web@gmail.com</p>
+            <p class="text-muted text-center"><i class="far fa-calendar-alt text-danger"></i> วันทำการ: วันจันทร์ - วันศุกร์ </p>
+            <p class="text-muted text-center"><i class="far fa-clock text-danger"></i> เวลาทำการ: 9:00น. - 17:00น.</p>
+              <a href="#">
+                  <p class="text-muted text-center"><i class="fab fa-facebook-square fa-3x text-primary"></i> Facebook page: STN1508</p>
+              </a>
+              <a href="#">
+                  <p class="text-muted text-center"><i class="fab fa-line fa-3x text-success"></i> Line ID: STN1508</p>
+              </a>
+        </p><hr>
+        <p class="text-center"><a href="<?=base_url();?>contact#map"><button class="btn btn-outline-info text-center"><i class="fas fa-map-marker-alt"></i> แผนที่บริษัท STN</button></a></P>
+        <p class="text-center"><a href="<?=base_url();?>contact#message"><button class="btn btn-outline-success text-center"><i class="fas fa-map-marker-alt"></i> ส่งข้อความติดต่อบริษัท STN</button></a></P>
       </nav>
     <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
 

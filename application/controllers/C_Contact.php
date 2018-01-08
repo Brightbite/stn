@@ -36,7 +36,7 @@
       $this->load->view('template/V_Footer',$footer);
     }
 
-    function message(){
+    function Message(){
       $category_menu = $this->m_cat->mCategory();
       $feature_brand = $this->m_cat->mBrand();
 

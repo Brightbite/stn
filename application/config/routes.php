@@ -13,7 +13,8 @@ $route['home'] = 'C_Home/index';
 $route['product'] = 'C_Product/index';
 $route['product_by_catalog/(:any)/(:any)']   = 'C_Product/Catalog/$1/$2';
 $route['product_detail/(:any)'] = 'C_Product/Detail/$1';
+$route['search'] = 'C_Product/Search';
 
 //contact
 $route['contact'] = 'C_Contact/index';
-$route['message'] = 'C_Contact/message';
+$route['message'] = 'C_Contact/Message';

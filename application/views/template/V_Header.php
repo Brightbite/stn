@@ -57,11 +57,12 @@
             <a class="nav-link font-weight-bold" href="<?=base_url();?>contact"><i class="fas fa-phone"></i> ติดต่อ / <i class="fas fa-shopping-cart"></i> ขอใบเสนอราคา</a>
           </li>
           <li class="nav-item">
-          <form method="post" action="<?php echo base_url();?>search">
-            <input type="text" name="searchProduct" placeholder="search " class="form-control pull-left ">
+          <form method="post" enctype="multipart/form-data" action="<?=base_url();?>search">
+            <input type="text"  name="searchProduct" id="searchProduct" required placeholder="search " class="form-control pull-left ">
           </li>
           <li class="nav-item">
-            <button type="submit" name="buttonSearch" class="btn btn-outline-info pull-right"><i class="fas fa-search"></i> Search</button>
+            <!-- <input type="button" value="search" class="btn btn-outline-info pull-right"  id="btn-prod-search"> -->
+            <button type="submit" class="btn btn-outline-info pull-right" name="btn-search"><i class="fas fa-search"></i> Search</button>
           </li>
         </form>
         </ul>

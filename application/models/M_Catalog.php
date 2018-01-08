@@ -87,5 +87,24 @@ class M_Catalog extends CI_Model
           }
       }
 
+      public function mSearch($search_item){
+        $SQL = "SELECT ProductID,
+                       ProductName,
+                       ProductDesc,
+                       ProductPicture,
+                       CategoryID
+                 FROM product
+                 WHERE 1";
+                 if ($search_item != '') {
+                   $SQL.= " AND ProductName LIKE '%$search_item%' OR ProductDesc LIKE '%$search_item%'";
+                 }
+        $query = $this->db->query($SQL);
+        if ($query->num_rows() > 0){
+          return $query->result();
+        }else{
+          return 'error';
+        }
+      }
+
 }
  ?>

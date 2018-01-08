@@ -60,5 +60,26 @@
       $this->load->view('V_Product_Detail',$index);
       $this->load->view('template/V_Footer',$footer);
     }
+
+    function Search(){
+      $category_menu = $this->m_cat->mCategory();
+      $feature_brand = $this->m_cat->mBrand();
+      $search_item = $this->input->post('searchProduct');
+      echo "$search_item";
+      $search_product = $this->m_cat->mSearch($search_item);
+      $header = array('keywords' => 'STN,chemical,laboratory wares,trading,STN 1508,picric acid,เคมีภัณฑ์,ของใช้ในห้องแล็บ,ของใช้ในห้องแล็ป,กรดพิคริก,สารเคมี,ขายสารเคมี,ขายกรดพิคริก")',
+                      'description' => 'STN trading company - chemical and laboratory wares business',
+                      'title' => 'STN หน้าผลลัพการค้นหาสินค้า',
+                      'category_menu' => $category_menu
+                      );
+      $index = array('category_menu' => $category_menu,
+                      'search_product' => $search_product
+                      );
+      $footer = array('feature_brand' => $feature_brand
+                      );
+      $this->load->view('template/V_Header',$header);
+      $this->load->view('V_Search',$index);
+      $this->load->view('template/V_Footer',$footer);
+    }
   }
  ?>

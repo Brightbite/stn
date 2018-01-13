@@ -65,7 +65,14 @@
 
   <!-- main content -->
   <div class="container">
-
+    <div class="py-6 bg-image-full jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/geometric.jpg'); height:200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="jumbotron bg-light">
       <h1 class="display-4 font-weight-bold text-info">STN 1508</h1>
       <p class="lead">หจก. เอส.ที.เอ็น.(1508) เทรดดิ้ง จำกัด.</p>
@@ -73,8 +80,8 @@
       <p></p>
       <p class="lead">
           <div class="card-body">
-            <h5 class="card-title text-primary font-weight-bold">สินค้า และ บริการ</h5>
-            <p class="card-text text-muted">
+            <h5 class="card-title text-info font-weight-bold">สินค้า และ บริการ</h5>
+            <p class="card-text text-dark font-weight-bold">
               - กรดพิคริก(Picric Acid)<br>
               - สารเคมี, อุปกรณ์ที่ใช้ในห้องแลป<br>
               - เครื่องแก้ว, พลาสติก, พอชเลน, ไฮโดมิเตอร์, เทอร์โมมิเตอร์, กระดาษกรอง<br>

@@ -62,7 +62,14 @@
 
   <!-- main content -->
   <div class="container">
-
+    <div class="py-6 bg-image-full jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/animals.png'); height:200px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <br><br>
     <div class="jumbotron">
@@ -83,15 +90,8 @@
             <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>">
               <input type="hidden" value="<?=$show->ProductID;?>">
               <img class="card-img-top"  src="<?=$show->ProductPicture;?>" style="width:200px; height:250px; object-fit: scale-down;">
+              <h5 class="card-title text-info">เคมีภัณฑ์ <?=$show->ProductName;?></h5>
             </a>
-            <div class="card-block">
-              <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>">
-                <input type="hidden" value="<?=$show->ProductID;?>">
-                <h5 class="card-title text-info">เคมีภัณฑ์ <?=$show->ProductName;?></h5>
-              </a>
-              <!-- <p class="card-text">เคมีภัณฑ์คุณภาพ <?=mb_substr($show->ProductDesc,0,150,'utf-8');?>...</p> -->
-              <!-- <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>" class="btn btn-primary float-right">ดูเพิ่มเติม...</a> -->
-            </div>
           </div>
         </div>
       <?php } //end foreach ?>

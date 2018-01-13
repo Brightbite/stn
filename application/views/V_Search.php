@@ -62,7 +62,14 @@
 
   <!-- main content -->
   <div class="container">
-
+    <div class="py-6 bg-image-full jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/68404220.jpg'); height:200px;  object-fit: scale-down;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <br><br>
     <div class="jumbotron">
@@ -76,15 +83,13 @@
       <!-- Category Menu-->
       <?php if(is_array($search_product) == true){ ?>
       <?php foreach ($search_product as  $search) {  $search->CategoryID; ?>
-        <div class="card" style="width: 14rem;">
+        <div class="col-lg-3">
+          <div class="card mb-4 text-center" style="border-color:white">
           <a href="<?=base_url();?>product_detail/<?=$search->ProductID;?>">
             <input type="hidden" value="<?=$search->ProductID;?>">
-            <img class="card-img-top"  src="<?=$search->ProductPicture;?>" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
+            <img class="card-img-top"  src="<?=$search->ProductPicture;?>" alt="Card image" style="width:200px; height:250px; object-fit: scale-down;">
+            <h5 class="card-title text-info">เคมีภัณฑ์ <?=$search->ProductName;?></h5>
           </a>
-          <div class="card-body">
-            <h5 class="card-title">เคมีภัณฑ์ <?=$search->ProductName;?></h5>
-            <p class="card-text">เคมีภัณฑ์คุณภาพ <?=mb_substr($search->ProductDesc,0,150,'utf-8');?>...</p>
-            <a href="<?=base_url();?>product_detail/<?=$search->ProductID;?>" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
           </div>
         </div>
       <?php } //end foreach ?>

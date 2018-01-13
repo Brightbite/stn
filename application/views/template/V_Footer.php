@@ -1,41 +1,3 @@
-<br><br><br><hr>
-
-<!--carousel feature brands-->
-  <div class="col-md-12 text-center"><h3 class="text-info font-weight-bold ">Feature Brands</h3></div>
-  <div class="container-fluid">
-      <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="4000" style="max-height:150px; margin:0 auto">
-          <div class="carousel-inner row w-100 mx-auto" role="listbox">
-            <div class="carousel-item col-md-3 active">
-              <a href="<?=base_url();?>home">
-                <img class="img-fluid mx-auto d-block" src="<?=base_url('application/assets/img/logo/');?>stn.jpg" alt="slide 1">
-              </a>
-            </div>
-            <?php if(isset($feature_brand) == true){?>
-              <?php foreach ($feature_brand as $brand){ $brand->BrandID;?>
-            <div class="carousel-item col-md-3">
-              <a href="<?=base_url();?>product_detail/<?=$brand->ProductID;?>">
-                <input type="hidden" value="<?=$brand->ProductID;?>">
-                <img class="img-fluid mx-auto d-block" src="<?=$brand->BrandPicture;?>" alt="<?=$brand->BrandID;?>">
-              </a>
-            </div>
-            <!-- end foreach -->
-          <?php } ?>
-          <!-- end  if -->
-        <?php }else { ?>
-        <h2>no images</h2>
-        <?php } ?>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-              <i class="fas fa-angle-left text-muted"></i>
-              <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-              <i class="fas fa-angle-right text-muted"></i>
-              <span class="sr-only">Next</span>
-          </a>
-      </div>
-  </div>
-  <!-- end of carousel -->
 
     <!-- Footer -->
     <br><br><hr>
@@ -74,7 +36,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="#" data-toggle="modal" data-target="#sModal">
                   <div style="color:green">
                     <i class="fab fa-line fa-3x"></i>
                   </div>
@@ -87,6 +49,21 @@
 
       </div>
     </nav>
+    <!-- modal line id -->
+    <div class="modal fade" id="sModal" tabindex="-1" role="dialog" aria-labelledby="sModalLabel" ng-controller="loginController">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h4 class="modal-title" id="sModalLabel">Line ID: STN1508</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+            <img src="<?php echo base_url();?>application/assets/img/etc/line.png" style="object-fit: scale-down;">
+          <div class="modal-footer">
+            <a href="<?php echo base_url();?>contact" button type="button"  class="btn btn-outline-primary btn-lg btn-block">ส่งข้อความติดต่อสอบถาม</button></a>
+          </div>
+        </div>
+      </div>
 
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

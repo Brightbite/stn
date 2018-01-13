@@ -51,7 +51,7 @@
               <a href="#">
                   <p class="text-muted text-center"><i class="fab fa-facebook-square fa-3x text-primary"></i> Facebook page: STN1508</p>
               </a>
-              <a href="#">
+              <a href="#" data-toggle="modal" data-target="#sModal">
                   <p class="text-muted text-center"><i class="fab fa-line fa-3x text-success"></i> Line ID: STN1508</p>
               </a>
         </p><hr>
@@ -66,7 +66,7 @@
 
     <br><br>
     <div class="jumbotron">
-      <h1 class="display-4">ผลการค้นหา</h1>
+      <h1 class="display-4 text-info">ผลการค้นหา</h1>
       <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
       <hr class="my-4">
     </div>
@@ -89,7 +89,7 @@
         </div>
       <?php } //end foreach ?>
       <?php }else{ ?>
-        <h2 class="text-dark">ไม่พบสินค้าที่ท่านค้นหา กรุณาลองกรอกข้อมูลอื่น หรือ <a href="<?=base_url();?>contact"><button class="btn btn-info"><i class="fas fa-phone"></i> ติดต่อบริษัท STN</button></a>
+        <h2 class="text-muted">ไม่พบสินค้าที่ท่านค้นหา กรุณาลองกรอกข้อมูลอื่น หรือ <a href="<?=base_url();?>contact"><button class="btn btn-info"><i class="fas fa-phone"></i> ติดต่อบริษัท STN</button></a>
       <?php } ?>
     </div>
     <!-- end first row  -->

@@ -51,7 +51,7 @@
               <a href="#">
                   <p class="text-muted text-center"><i class="fab fa-facebook-square fa-3x text-primary"></i> Facebook page: STN1508</p>
               </a>
-              <a href="#">
+              <a href="#" data-toggle="modal" data-target="#sModal">
                   <p class="text-muted text-center"><i class="fab fa-line fa-3x text-success"></i> Line ID: STN1508</p>
               </a>
         </p><hr>
@@ -67,7 +67,7 @@
 
     <!-- first row -->
     <div class="col-md-5"><br>
-        <img class="img img-responsive" src="<?=$product_detail->ProductPicture;?>" alt="" style="width:100%;max-width:680px; height:100%; max-height:720px; object-fit: scale-down;">
+        <img class="img img-responsive" src="<?=$product_detail->ProductPicture;?>" alt="" style="width:680px; height:720px;  object-fit: scale-down;">
     </div>
     <div class="col-md-4">
       <!-- <div class="card-body"> -->

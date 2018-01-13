@@ -54,7 +54,7 @@
               <a href="#">
                   <p class="text-muted text-center"><i class="fab fa-facebook-square fa-3x text-primary"></i> Facebook page: STN1508</p>
               </a>
-              <a href="#">
+              <a href="#" data-toggle="modal" data-target="#sModal">
                   <p class="text-muted text-center"><i class="fab fa-line fa-3x text-success"></i> Line ID: STN1508</p>
               </a>
         </p><hr>
@@ -132,7 +132,7 @@
             <a href="#">
                 <h4 class="text-dark"><i class="fab fa-facebook-square fa-3x text-primary"></i> Facebook page: STN1508</h4><br>
             </a>
-            <a href="#">
+            <a href="#" data-toggle="modal" data-target="#sModal">
                 <h4 class="text-dark"><i class="fab fa-line fa-3x text-success"></i> Line ID: STN1508</h4><br><hr><br>
             </a>
       </div>

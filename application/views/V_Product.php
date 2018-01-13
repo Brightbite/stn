@@ -50,7 +50,7 @@
                 <a href="#">
                     <p class="text-muted text-center"><i class="fab fa-facebook-square fa-3x text-primary"></i> Facebook page: STN1508</p>
                 </a>
-                <a href="#">
+                <a href="#" data-toggle="modal" data-target="#sModal">
                     <p class="text-muted text-center"><i class="fab fa-line fa-3x text-success"></i> Line ID: STN1508</p>
                 </a>
           </p><hr>
@@ -85,7 +85,10 @@
               <img class="card-img-top"  src="<?=$show->ProductPicture;?>" style="width:200px; height:250px; object-fit: scale-down;">
             </a>
             <div class="card-block">
-              <h5 class="card-title text-info">เคมีภัณฑ์ <?=$show->ProductName;?></h5>
+              <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>">
+                <input type="hidden" value="<?=$show->ProductID;?>">
+                <h5 class="card-title text-info">เคมีภัณฑ์ <?=$show->ProductName;?></h5>
+              </a>
               <!-- <p class="card-text">เคมีภัณฑ์คุณภาพ <?=mb_substr($show->ProductDesc,0,150,'utf-8');?>...</p> -->
               <!-- <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>" class="btn btn-primary float-right">ดูเพิ่มเติม...</a> -->
             </div>
@@ -93,8 +96,8 @@
         </div>
       <?php } //end foreach ?>
       <?php }else{ ?>
-        <h2 class="text-light">no product information</a>
-      <?php } ?>
+        <h2 class="text-muted">ติดต่อสอบถามหาสินค้าและบริการอื่นๆกับบริษัท STN <a href="<?=base_url();?>contact"><button class="btn btn-info"><i class="fas fa-phone"></i> ติดต่อบริษัท STN</button></a>
+        <?php } ?>
 
   </div>
 

@@ -10,7 +10,7 @@ class M_Catalog extends CI_Model
       public function mCategory(){
             $SQL = "SELECT CategoryID,
                            CategoryName,
-                           Description
+                           CategoryDesc
                     FROM Category
                     ORDER BY CategoryID ASC";
             $query = $this->db->query($SQL);
@@ -24,7 +24,7 @@ class M_Catalog extends CI_Model
       public function mCategoryDesc($CatalogID){
             $SQL = "SELECT CategoryId,
                            CategoryName,
-                           Description
+                           CategoryDesc
                     FROM   Category
                     WHERE  CategoryID = '$CatalogID'";
             $query = $this->db->query($SQL);
@@ -59,7 +59,7 @@ class M_Catalog extends CI_Model
                        PD.ProductPicture,
                        CT.CategoryID,
                        CT.CategoryName,
-                       CT.Description
+                       CT.CategoryDesc
                 FROM   product PD, category CT
                 WHERE  PD.ProductID = '$ProductID' AND CT.CategoryID = PD.CategoryID";
         $query = $this->db->query($SQL);

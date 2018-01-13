@@ -25,9 +25,9 @@
                     <!-- Category Menu-->
                     <?php if(is_array($category_menu) == true){ ?>
                     <?php foreach ($category_menu as  $category_menu) {  $category_menu->CategoryID; ?>
-                    <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?=$category_menu->Description;?>"
+                    <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?=$category_menu->CategoryDesc;?>"
                       class="btn bg-light text-info" role="group">
-                      <?=$category_menu->Description;?>
+                      <?=$category_menu->CategoryDesc;?>
                     </a>
                     <?php } //end foreach ?>
                     <?php }else{ ?>
@@ -66,202 +66,41 @@
   <!-- main content -->
   <div class="container">
 
-    <div class="jumbotron bg-info text-light">
-      <h1 class="display-4">Picric acid</h1>
-      <img class="card-img float-right" src="<?=base_url('application/assets/img/product/');?>merck1.jpg" alt="Card image" style="max-height:1149px; max-width:270px">
-      <p class="lead">การใช้ประโยชน์: สีย้อม สารกำจัดเชื้อรา สารกัดทองแดงและสารตัวกลางในกระบวนการผลิต metal picrates ใช้ในกระบวนการผลิตของผลิตภัณฑ์หนัง แบตเตอรี่ แก้วชนิดมีสี สารย้อมสีสิ่งทอชนิดติดทนนานและอีมัลชั่นที่ใช้ในงานถ่ายภาพ [HSDB]</p>
+    <div class="jumbotron bg-light">
+      <h1 class="display-4 font-weight-bold text-info">STN 1508</h1>
+      <p class="lead">หจก. เอส.ที.เอ็น.(1508) เทรดดิ้ง จำกัด.</p>
       <hr class="my-4">
-      <p>พร้อมใบรับรอง</p>
+      <p></p>
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">ติดต่อสอบถามเพิ่มเติม...</a>
+          <div class="card-body">
+            <h5 class="card-title text-primary font-weight-bold">สินค้า และ บริการ</h5>
+            <p class="card-text text-muted">
+              -กรดพิคริก(Picric Acid)<br>
+              -สารเคมี, อุปกรณ์ที่ใช้ในห้องแลป<br>
+              -เครื่องแก้ว, พลาสติก, พอชเลน, ไฮโดมิเตอร์, เทอร์โมมิเตอร์, กระดาษกรอง<br>
+              -HYDROMETER WITH SERIAL NUMBER (วัดค่าความถ่วงจ าเพาะทุกชนิด ทุกช่วงวัด)<br>
+              -เครื่องชั่ง, เครื่องวัด, เครื่องวัดความชื้น, พีเอช มิเตอร์, คอนดัคทิวิตี้<br>
+              -ออยล์ บาท, วอเตอร์บาท และ เซอคูเรเตอร์<br>
+              -อุปกรณ์ เซฟตี้<br>
+              -ตู้ดูดควัน, ฮอทเพลท, ดิสเพนเซอร์, โพลมิเตอร์, เชคเกอร์     ฯลฯ<br>
+              -ฮีทติ้ง, คูลิ่งบาท, โอเวน, อิเล็คโทรด<br>
+              -ชุดวัด BOD, DOD, JAR TEST<br>
+              -เครื่องวัดวิเคราะห์คุณภาพน้ำมัน<br>
+              -เตาเผา, เครื่องผสมสีใน LAB, เครื่องมือควบคุมคุณภาพสีและโพลิเมอร์<br>
+              -เฟอร์นิเจอร์ LAB<br>
+              -รับงานสอบเทียบ<br>
+              -เราเป็นตัวแทนจำหน่าย เครื่องมือ สำหรับห้องปฏิบัติการโลหะวิทยา เครื่องทดสอบ เครื่องมือวัดละเอียด จากผู้ผลิตชั้นนำทั่วโลก ฯลฯ
+            </p>
+            <a href="<?=base_url();?>contact#message" class="btn btn-success float-right">ติดต่อสอบถามหา สินค้า และ บริการ</a>
+          </div>
+
       </p>
     </div>
 
-    <div class="card">
-      <div class="card-header">
-        Featured ตาม Order
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">ใช้ catalog number</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">สอบถามสารเคมี</a>
-      </div>
-    </div>
-
-    <br><br>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      </div>
-    </div>
-
-    <!-- first row -->
-    <div class="row">
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>merck1.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">เคมีภัณฑ์คุณภาพจาก Merck</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
 
 
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
 
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
 
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-    </div>
-    <!-- end first row  -->
-
-    <br><br>
-
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">second row Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      </div>
-    </div>
-
-    <!-- second row -->
-      <div class="row">
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-    </div>
-    <!--end second row -->
-    <br><br>
-
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">เคมีภัณฑ์ อื่นๆ</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      </div>
-    </div>
-
-    <!-- third row -->
-      <div class="row">
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-    </div>
-    <!--end third row -->
-    </div>
   </main>
   <!-- end main container -->
   </div>

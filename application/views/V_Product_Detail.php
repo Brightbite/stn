@@ -56,7 +56,7 @@
               </a>
         </p><hr>
         <p class="text-center"><a href="<?=base_url();?>contact#map"><button class="btn btn-outline-info text-center"><i class="fas fa-map-marker-alt"></i> แผนที่บริษัท STN</button></a></P>
-        <p class="text-center"><a href="<?=base_url();?>contact#message"><button class="btn btn-outline-success text-center"><i class="fas fa-map-marker-alt"></i> ส่งข้อความติดต่อบริษัท STN</button></a></P>  
+        <p class="text-center"><a href="<?=base_url();?>contact#message"><button class="btn btn-outline-success text-center"><i class="fas fa-map-marker-alt"></i> ส่งข้อความติดต่อบริษัท STN</button></a></P>
       </nav>
 
 
@@ -75,7 +75,7 @@
             <h1 class="text-primary"><?=$product_detail->ProductName;?> </h3><hr>
             <h6 class="text-muted text-white">Product ID# <?=$product_detail->ProductID;?></h6>
             <h7 class="text-muted text-white">Category: <?=$product_detail->CategoryName;?></h7><br><br>
-            <a class="btn btn-dark" href="<?=base_url();?>contact">ติดต่อสอบถามเพิ่มเติม</a><br><br>
+            <a class="btn btn-dark" href="<?=base_url();?>contact#message">ติดต่อสอบถามเพิ่มเติม</a><br><br>
             <h4 class="text-info">รายละเอียดสินค้า</h4><hr>
             <p class="text-secondary"><?=$product_detail->ProductDesc;?></P>
     </div>

@@ -1,4 +1,5 @@
 <br><br><br><hr>
+
 <!--carousel feature brands-->
   <div class="col-md-12 text-center"><h3 class="text-info font-weight-bold ">Feature Brands</h3></div>
   <div class="container-fluid">
@@ -35,6 +36,7 @@
       </div>
   </div>
   <!-- end of carousel -->
+
     <!-- Footer -->
     <br><br><hr>
     <nav class="navbar navbar-expand-md bg-light">

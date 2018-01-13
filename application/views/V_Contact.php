@@ -24,9 +24,9 @@
                     <!-- Category Menu-->
                     <?php if(is_array($category_menu) == true){ ?>
                     <?php foreach ($category_menu as  $category_menu) {  $category_menu->CategoryID; ?>
-                    <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?=$category_menu->Description;?>"
+                    <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?=$category_menu->CategoryDesc;?>"
                       class="btn bg-light text-info" role="group">
-                      <?=$category_menu->Description;?>
+                      <?=$category_menu->CategoryDesc;?>
                     </a>
                     <?php } //end foreach ?>
                     <?php }else{ ?>

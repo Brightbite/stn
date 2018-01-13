@@ -22,7 +22,7 @@
                       ขายสารเคมี,
                       ขายกรดพิคริก")',
                       'description' => 'STN trading company - chemical and laboratory wares business',
-                      'title' => 'STN หน้าหลัก',
+                      'title' => 'STN - ห.จ.ก STN 1508 เทรดดิ้ง',
                       'category_menu' => $category_menu
                       );
 

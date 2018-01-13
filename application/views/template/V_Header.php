@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>bootstrap-reboot.min.css">
     <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>bootstrap-reboot.css">
     <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>customs.css">
-    <link rel="stylesheet" href="<?=base_url('application/assets/css/'); ?>half-slider.css">
-    <link rel="stylesheet" href="<?=base_url('application/assets/css/'); ?>full-width-pics.css">
-    <link rel="stylesheet" href="<?=base_url('application/assets/css/'); ?>landing-page.css">
-    <link rel="stylesheet" href="<?=base_url('application/assets/css/'); ?>landing-page.min.css">
+    <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>half-slider.css">
+    <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>full-width-pics.css">
+    <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>landing-page.css">
+    <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>landing-page.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <script type="text/javascript" src="<?=base_url('application/assets/js/'); ?>jquery.js"></script>
@@ -50,7 +50,7 @@
               <a href="" class="bg-dark text-light list-group-item">All Catalog</a>
               <?php } ?>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item text-muted" href="<?=base_url();?>contact#message"><i class="fas fa-phone text-muted"></i>  ติดต่อสอบถามหาสินค้า</a>
             </div>
           </li>
           <li class="nav-item">

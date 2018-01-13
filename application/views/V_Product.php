@@ -66,150 +66,42 @@
 
     <br><br>
     <div class="jumbotron">
-      <h1 class="display-4"><?=$category_desc->CategoryName?></h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <h1 class="display-4 text-info"><?=$category_desc->CategoryName?></h1>
       <hr class="my-4">
+      <p class="lead text-muted"><?=$category_desc->CategoryDesc?></p>
+
     </div>
 
 
+  <div class="row">
     <!-- first row -->
-    <div class="row">
-      <!-- Category Menu-->
+    <!-- Category Menu-->
       <?php if(is_array($show_product) == true){ ?>
       <?php foreach ($show_product as  $show) {  $show->CategoryID; ?>
-        <div class="card" style="width: 14rem;">
-          <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>">
-            <input type="hidden" value="<?=$show->ProductID;?>">
-            <img class="card-img-top"  src="<?=$show->ProductPicture;?>" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">เคมีภัณฑ์ <?=$show->ProductName;?></h5>
-            <p class="card-text">เคมีภัณฑ์คุณภาพ <?=mb_substr($show->ProductDesc,0,150,'utf-8');?>...</p>
-            <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
+        <div class="col-lg-3" >
+          <div class="card mb-4 text-center" style="border-color:white">
+            <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>">
+              <input type="hidden" value="<?=$show->ProductID;?>">
+              <img class="card-img-top"  src="<?=$show->ProductPicture;?>" style="width:200px; height:250px; object-fit: scale-down;">
+            </a>
+            <div class="card-block">
+              <h5 class="card-title text-info">เคมีภัณฑ์ <?=$show->ProductName;?></h5>
+              <!-- <p class="card-text">เคมีภัณฑ์คุณภาพ <?=mb_substr($show->ProductDesc,0,150,'utf-8');?>...</p> -->
+              <!-- <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>" class="btn btn-primary float-right">ดูเพิ่มเติม...</a> -->
+            </div>
           </div>
         </div>
       <?php } //end foreach ?>
       <?php }else{ ?>
         <h2 class="text-light">no product information</a>
       <?php } ?>
-    </div>
+
+  </div>
+
     <!-- end first row  -->
 
     <br><br>
 
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">second row Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      </div>
-    </div>
-
-    <!-- second row -->
-      <div class="row">
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-    </div>
-    <!--end second row -->
-    <br><br>
-
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">เคมีภัณฑ์ อื่นๆ</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-      </div>
-    </div>
-
-    <!-- third row -->
-      <div class="row">
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 14rem;">
-        <img class="card-img-top"  src="<?=base_url('application/assets/img/product/');?>barrel.jpg" alt="Card image" style="max-height:400px; max-width:400px" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">เคมีภัณฑ์ Merck</h5>
-          <p class="card-text">Acetone 112 Trichloroethylene Ethanol 95-98%</p>
-          <a href="#" class="btn btn-primary float-right">ดูเพิ่มเติม...</a>
-        </div>
-      </div>
-    </div>
-    <!--end third row -->
     </div>
   </main>
   <!-- end main container -->

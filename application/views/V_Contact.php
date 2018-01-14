@@ -61,15 +61,17 @@
         <p class="text-center"><a href="<?=base_url();?>contact#map"><button class="btn btn-outline-info text-center"><i class="fas fa-map-marker-alt"></i> แผนที่บริษัท STN</button></a></P>
         <p class="text-center"><a href="<?=base_url();?>contact#message"><button class="btn btn-outline-success text-center"><i class="fas fa-map-marker-alt"></i> ส่งข้อความติดต่อบริษัท STN</button></a></P>
       </nav>
-
+<main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
   <!-- main content -->
-  <div class="container col-sm-8">
+  <div class="container">
       <!-- <div class="py-5 bg-image-full" style="background-image: url('<?=base_url();?>application/assets/img/etc/contact2.jpg'); height:200px;">
       </div> -->
-      <div class="py-6 bg-image-full jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/contact2.jpg'); height:200px;">
+      <div class=" jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/header4.jpg'); width:1100px; height:200px;  object-fit: scale-down;">
           <div class="container">
               <div class="row">
-                  <div class="col-xl-5">
+                  <div class="col-xl-12">
+                    <h2 class="display-4 text-warning" id="message">ส่งข้อความติดต่อสอบถาม</h2>
+                    <h5 class="text-light">ติดต่อสอบถาม / ขอใบเสนอราคา / อื่นๆ</h5>
                   </div>
               </div>
           </div>
@@ -139,7 +141,7 @@
     </div>
     <br><br><hr>
     </div>
-
+  </main>
 
   </div>
   <!-- end main container -->

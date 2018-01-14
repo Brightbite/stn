@@ -65,10 +65,12 @@
 
   <!-- main content -->
   <div class="container">
-    <div class="py-6 bg-image-full jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/geometric.jpg'); height:200px;">
+    <div class="py-6 bg-image-full jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/header3.jpg'); width:1100px; height:200px;  object-fit: scale-down;">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5">
+                <div class="col-xl-12">
+                  <h1 class="display-4 font-weight-bold text-warning">STN 1508</h1>
+                  <p class="lead text-light">หจก. เอส.ที.เอ็น.(1508) เทรดดิ้ง จำกัด.</p>
                 </div>
             </div>
         </div>
@@ -77,7 +79,6 @@
       <h1 class="display-4 font-weight-bold text-info">STN 1508</h1>
       <p class="lead">หจก. เอส.ที.เอ็น.(1508) เทรดดิ้ง จำกัด.</p>
       <hr class="my-4">
-      <p></p>
       <p class="lead">
           <div class="card-body">
             <h5 class="card-title text-info font-weight-bold">สินค้า และ บริการ</h5>

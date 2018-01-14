@@ -62,21 +62,15 @@
 
   <!-- main content -->
   <div class="container">
-    <div class="py-6 bg-image-full jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/68404220.jpg'); height:200px;  object-fit: scale-down;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5">
+    <div class=" jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/header1.jpg'); width:1100px; height:200px;  object-fit: scale-down;">
+                <div class="col-xl-12">
+                  <h1 class="display-4 text-warning">ผลการค้นหา</h1>
+                  <p class="lead text-light">ผลการค้นหา</p>
                 </div>
-            </div>
-        </div>
     </div>
 
     <br><br>
-    <div class="jumbotron">
-      <h1 class="display-4 text-info">ผลการค้นหา</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-    </div>
+
 
     <!-- first row -->
     <div class="row">

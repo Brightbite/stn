@@ -62,22 +62,23 @@
 
   <!-- main content -->
   <div class="container">
-    <div class="py-6 bg-image-full jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/animals.png'); height:200px;">
+    <div class="jumbotron jumbotron-billboard" style="background-image: url('<?=base_url();?>application/assets/img/etc/header2.jpg'); width:1100px; height:200px;  object-fit: scale-down;">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5">
+                <div class="col-xl-12">
+                  <h1 class="display-4 text-warning"><?=$category_desc->CategoryName?></h1>
+                  <p class="lead text-light"><?=$category_desc->CategoryDesc?></p>
                 </div>
             </div>
         </div>
     </div>
 
     <br><br>
-    <div class="jumbotron">
+    <!-- <div class="jumbotron">
       <h1 class="display-4 text-info"><?=$category_desc->CategoryName?></h1>
       <hr class="my-4">
       <p class="lead text-muted"><?=$category_desc->CategoryDesc?></p>
-
-    </div>
+    </div> -->
 
 
   <div class="row">

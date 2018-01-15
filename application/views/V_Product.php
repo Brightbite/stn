@@ -91,7 +91,7 @@
             <a href="<?=base_url();?>product_detail/<?=$show->ProductID;?>">
               <input type="hidden" value="<?=$show->ProductID;?>">
               <img class="card-img-top"  src="<?=$show->ProductPicture;?>" style="width:200px; height:250px; object-fit: scale-down;">
-              <h5 class="card-title text-info">เคมีภัณฑ์ <?=$show->ProductName;?></h5>
+              <h5 class="card-title text-info"><?=$show->ProductName;?></h5>
             </a>
           </div>
         </div>

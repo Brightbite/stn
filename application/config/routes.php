@@ -18,3 +18,7 @@ $route['search'] = 'C_Product/Search';
 //contact
 $route['contact'] = 'C_Contact/index';
 $route['message'] = 'C_Contact/Message';
+
+//admin
+$route['admin'] = 'C_Admin/index';
+$route['removemsg'] = 'C_Admin/removeMessage';

@@ -15,5 +15,34 @@ class M_Contact extends CI_Model
         }
       }
 
+      public function mMessage(){
+        $SQL = "SELECT ContactID,
+                       ContactDate,
+                       ContactName,
+                       ContactCompany,
+                       ContactEmail,
+                       ContactTel,
+                       ContactSubject,
+                       ContactMessage
+                FROM contact
+                ORDER BY ContactDate DESC";
+        $query = $this->db->query($SQL);
+        if ($query->num_rows() > 0){
+          return $query->result();
+        }else {
+          return 'empty';
+        }
+      }
+
+      public function mRemoveMsg($data){
+           if ($this->db->delete('contact',$data)) { // DELETE FROM register ....
+             return 'delete success';
+           }else{
+             return 'error';
+           }
+
+      }
+
+
 }
  ?>

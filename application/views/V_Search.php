@@ -68,10 +68,8 @@
                   <p class="lead text-light">ผลการค้นหา</p>
                 </div>
     </div>
-
     <br><br>
-
-
+    <h1 class="display-4 text-info font-weight-bold"><i class="fas fa-search"></i> keyword: <?=$search_item?></h1><hr><br>
     <!-- first row -->
     <div class="row">
       <!-- Category Menu-->
@@ -82,7 +80,7 @@
           <a href="<?=base_url();?>product_detail/<?=$search->ProductID;?>">
             <input type="hidden" value="<?=$search->ProductID;?>">
             <img class="card-img-top"  src="<?=$search->ProductPicture;?>" alt="Card image" style="width:200px; height:250px; object-fit: scale-down;">
-            <h5 class="card-title text-info">เคมีภัณฑ์ <?=$search->ProductName;?></h5>
+            <h5 class="card-title text-info"><?=$search->ProductName;?></h5>
           </a>
           </div>
         </div>

@@ -69,7 +69,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                  <h1 class="display-4 font-weight-bold text-warning">STN 1508</h1>
+                  <h1 class="display-4 font-weight-bold text-warning">Welcome</h1>
                   <p class="lead text-light">หจก. เอส.ที.เอ็น.(1508) เทรดดิ้ง จำกัด.</p>
                 </div>
             </div>

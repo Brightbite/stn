@@ -5,9 +5,54 @@ $(document).ready(function(){
       leave_message();
   });
 
+  $('#btn-login').click(function(){
+      login();
+  });
 
 });
 
+
+function login(){
+  console.log('validate');
+  if ($('#username').val().length == 0) {
+     $('#username').focus();
+
+  }else if ($('#password').val().length == 0) {
+            $('#password').focus();
+  }else {
+    var username = $('#username').val();
+    var password = $('#password').val();
+    console.log(username + ' ' + password);
+  }
+         $.ajax({
+           url:'logincheck',
+           data:{username:username,password:password},
+           method:"POST"
+         })
+         .done(function(data){
+           if (data.trim() == 'false'){
+              alert('Incorrect username or password! Please try again.');
+           }else {
+
+           }
+           switch (data.trim()) {
+              case '': //customer
+                      location.reload();
+              break;
+
+              case '1': //customer
+                       window.location = 'admin';
+                      // location.reload();
+              break;
+
+           }
+
+         })
+         .fail(function(jqXHR, textStatus){
+             alert('Error:'+ jqXHR +' '+ textStatus);
+         });
+
+}
 function leave_message(){
   console.log('validation');
   //validate form

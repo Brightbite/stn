@@ -43,6 +43,26 @@ class M_Contact extends CI_Model
 
       }
 
+      public function mLogin ($username,$password){
+          $SQL = 'SELECT AdminID,
+                         AdminPW,
+                         AdminPrivilege
+                  FROM admin
+                  WHERE AdminID = '.$this->db->escape($username). 'AND AdminPW =' .$this->db->escape($password);
+
+         //echo $SQL;
+       //  $SQL = "SELECT firstname,lastname FROM member WHERE email = $email ";
+       // //  if ($email == $loginData){
+       // //    $SQL.=" AND email = '$email'";
+       // //  }
+        $query = $this->db->query($SQL);
+         if ($query->num_rows() > 0) {
+           return $query->row();
+         }else{
+           return 'empty';
+         }
+      }
+
 
 }
  ?>

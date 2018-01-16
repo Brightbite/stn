@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>full-width-pics.css">
     <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>landing-page.css">
     <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>landing-page.min.css">
+    <link rel="stylesheet" href="<?=base_url('application/assets/css/');?>style.css">
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <script type="text/javascript" src="<?=base_url('application/assets/js/'); ?>jquery.js"></script>

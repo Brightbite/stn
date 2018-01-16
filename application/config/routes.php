@@ -22,3 +22,5 @@ $route['message'] = 'C_Contact/Message';
 //admin
 $route['admin'] = 'C_Admin/index';
 $route['removemsg'] = 'C_Admin/removeMessage';
+$route['login'] = 'C_Admin/adminLogin';
+$route['logincheck'] = 'C_Admin/loginCheck';

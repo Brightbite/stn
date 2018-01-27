@@ -46,7 +46,8 @@ class M_Contact extends CI_Model
       public function mLogin ($username,$password){
           $SQL = 'SELECT AdminID,
                          AdminPW,
-                         AdminPrivilege
+                         AdminPrivilege,
+                         AdminName
                   FROM admin
                   WHERE AdminID = '.$this->db->escape($username). 'AND AdminPW =' .$this->db->escape($password);
 

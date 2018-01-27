@@ -24,7 +24,7 @@
                     <!-- Category Menu-->
                     <?php if(is_array($category_menu) == true){ ?>
                     <?php foreach ($category_menu as  $category_menu) {  $category_menu->CategoryID; ?>
-                    <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?=$category_menu->CategoryDesc;?>"
+                    <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?=$category_menu->CategoryName;?>"
                       class="btn bg-light text-info" role="group">
                       <?=$category_menu->CategoryDesc;?>
                     </a>
@@ -111,7 +111,7 @@
           <br><br>
     <!-- address and map -->
         <h2 class="text-info card-title" id="map">ที่ตั้งสำนักงาน</h2><hr>
-        <p class="text-muted card-title">15/1 ซอย กรุงเทพกรีฑา 33 <br>เขต สะพานสูง <br>แขวง สะพานสูง<br> กรุงเทพฯ 10250"</p>
+        <p class="text-muted card-title">15/1 ซอย กรุงเทพกรีฑา 33 <br>เขต สะพานสูง <br>แขวง สะพานสูง<br> กรุงเทพฯ 10250</p>
         <iframe
           width="635"
           height="450"
@@ -131,7 +131,7 @@
           <h4 class="text-dark"><i class="far fa-envelope text-warning"></i> อีเมล: stn1508web@gmail.com</h4><br><hr><br>
           <h4 class="text-dark"><i class="far fa-calendar-alt text-danger"></i> วันทำการ: วันจันทร์ - วันศุกร์ </h4>
           <h4 class="text-dark"><i class="far fa-clock text-danger"></i> เวลาทำการ: 9:00น. - 17:00น.</h4><br><hr><br>
-            <a href="#">
+            <a href="https://www.facebook.com/STN-1508-Trading-Part-326135951220447/">
                 <h4 class="text-dark"><i class="fab fa-facebook-square fa-3x text-primary"></i> Facebook page: STN1508</h4><br>
             </a>
             <a href="#" data-toggle="modal" data-target="#sModal">

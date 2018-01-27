@@ -29,7 +29,7 @@
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/STN-1508-Trading-Part-326135951220447/">
                   <div style="color:blue">
                     <i class="fab fa-facebook-square fa-3x"></i>
                   </div>

@@ -24,7 +24,7 @@
                       <?php foreach ($category_menu as  $category_menu) {  $category_menu->CategoryID; ?>
                         <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?php echo $category_menu->CategoryName;?>"
                           class="btn bg-light text-info" role="group">
-                          <?=$category_menu->CategoryName;?>
+                          <?=$category_menu->CategoryDesc;?>
                         </a>
                       <?php } //end foreach ?>
                       <?php }else{ ?>
@@ -47,7 +47,7 @@
               <p class="text-muted text-center"><i class="far fa-envelope text-warning"></i> อีเมล: stn1508web@gmail.com</p>
               <p class="text-muted text-center"><i class="far fa-calendar-alt text-danger"></i> วันทำการ: วันจันทร์ - วันศุกร์ </p>
               <p class="text-muted text-center"><i class="far fa-clock text-danger"></i> เวลาทำการ: 9:00น. - 17:00น.</p>
-                <a href="#">
+                <a href="https://www.facebook.com/STN-1508-Trading-Part-326135951220447/">
                     <p class="text-muted text-center"><i class="fab fa-facebook-square fa-3x text-primary"></i> Facebook page: STN1508</p>
                 </a>
                 <a href="#" data-toggle="modal" data-target="#sModal">
@@ -66,7 +66,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                  <h1 class="display-4 text-warning"><?=$category_desc->CategoryName?></h1>
+                  <h1 class="display-4 text-warning"><?=$category_desc->CategoryDesc?></h1>
                   <p class="lead text-light"><?=$category_desc->CategoryDesc?></p>
                 </div>
             </div>

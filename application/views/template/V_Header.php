@@ -46,7 +46,7 @@
               <?php foreach ($category_menu as  $category_menu) {  $category_menu->CategoryID; ?>
               <a href="<?=base_url();?>product_by_catalog/<?=$category_menu->CategoryID;?>/<?=$category_menu->CategoryName;?>"
                 class="btn text-secondary" role="group">
-                <?=$category_menu->CategoryName;?>
+                <?=$category_menu->CategoryDesc;?>
               </a>
               <?php } //end foreach ?>
               <?php }else{ ?>

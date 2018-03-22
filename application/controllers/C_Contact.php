@@ -15,7 +15,7 @@
       $header = array('keywords' => 'STN,chemical,
                                      laboratory wares,
                                      trading,
-                                     STN 1508,
+                                     STN1508,
                                      picric acid,
                                      เคมีภัณฑ์,
                                      ของใช้ในห้องแล็บ,
@@ -25,7 +25,7 @@
                                      ขายสารเคมี,
                                      ขายกรดพิคริก")',
                       'description' => 'STN trading company - chemical and laboratory wares business',
-                      'title' => 'STN หน้าติดต่อ',
+                      'title' => 'STN1508 หน้าติดต่อ',
                       'category_menu' => $category_menu
       );
       $index = array('category_menu' => $category_menu);
@@ -68,7 +68,7 @@
       $header = array('keywords' => 'STN,chemical,
                                      laboratory wares,
                                      trading,
-                                     STN 1508,
+                                     STN1508,
                                      picric acid,
                                      เคมีภัณฑ์,
                                      ของใช้ในห้องแล็บ,
@@ -78,7 +78,7 @@
                                      ขายสารเคมี,
                                      ขายกรดพิคริก")',
                       'description' => 'STN trading company - chemical and laboratory wares business',
-                      'title' => 'STN หน้าติดต่อ',
+                      'title' => 'STN1508 หน้าติดต่อ',
                       'category_menu' => $category_menu
       );
       $index = array('category_menu' => $category_menu);

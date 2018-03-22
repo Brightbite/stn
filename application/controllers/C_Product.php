@@ -8,9 +8,9 @@
       $this->load->model('M_Catalog','m_cat');
     }
     function index(){
-      $header = array('keywords' => 'STN,chemical,laboratory wares,trading,STN 1508,picric acid,เคมีภัณฑ์,ของใช้ในห้องแล็บ,ของใช้ในห้องแล็ป,กรดพิคริก,สารเคมี,ขายสารเคมี,ขายกรดพิคริก")',
+      $header = array('keywords' => 'STN,chemical,laboratory wares,trading,STN1508,picric acid,เคมีภัณฑ์,ของใช้ในห้องแล็บ,ของใช้ในห้องแล็ป,กรดพิคริก,สารเคมี,ขายสารเคมี,ขายกรดพิคริก")',
                       'description' => 'STN trading company - chemical and laboratory wares business',
-                      'title' => 'STN หน้าสินค้า'
+                      'title' => 'STN1508 หน้าสินค้า'
       );
       $this->load->view('template/V_Header',$header);
       $this->load->view('V_Product');
@@ -23,9 +23,9 @@
       $show_product = $this->m_cat->mProduct($CatalogID);
       $feature_brand = $this->m_cat->mBrand();
 
-      $header = array('keywords' => 'STN,chemical,laboratory wares,trading,STN 1508,picric acid,เคมีภัณฑ์,ของใช้ในห้องแล็บ,ของใช้ในห้องแล็ป,กรดพิคริก,สารเคมี,ขายสารเคมี,ขายกรดพิคริก")',
+      $header = array('keywords' => 'STN,chemical,laboratory wares,trading,STN1508,picric acid,เคมีภัณฑ์,ของใช้ในห้องแล็บ,ของใช้ในห้องแล็ป,กรดพิคริก,สารเคมี,ขายสารเคมี,ขายกรดพิคริก")',
                       'description' => 'STN trading company - chemical and laboratory wares business',
-                      'title' => 'STN หน้าสินค้า',
+                      'title' => 'STN1508 หน้าสินค้า',
                       'category_menu' => $category_menu
                       );
       $index = array('category_menu' => $category_menu,
@@ -45,9 +45,9 @@
       $feature_brand = $this->m_cat->mBrand();
       $product_detail = $this->m_cat->mProductDetail($ProductID);
 
-      $header = array('keywords' => 'STN,chemical,laboratory wares,trading,STN 1508,picric acid,เคมีภัณฑ์,ของใช้ในห้องแล็บ,ของใช้ในห้องแล็ป,กรดพิคริก,สารเคมี,ขายสารเคมี,ขายกรดพิคริก")',
+      $header = array('keywords' => 'STN,chemical,laboratory wares,trading,STN1508,picric acid,เคมีภัณฑ์,ของใช้ในห้องแล็บ,ของใช้ในห้องแล็ป,กรดพิคริก,สารเคมี,ขายสารเคมี,ขายกรดพิคริก")',
                       'description' => 'STN trading company - chemical and laboratory wares business',
-                      'title' => 'STN หน้ารายละเอียดสินค้า',
+                      'title' => 'STN1508 หน้ารายละเอียดสินค้า',
                       'category_menu' => $category_menu
                       );
       $index = array('category_menu' => $category_menu,
@@ -66,9 +66,9 @@
       $feature_brand = $this->m_cat->mBrand();
       $search_item = $this->input->post('searchProduct');
       $search_product = $this->m_cat->mSearch($search_item);
-      $header = array('keywords' => 'STN,chemical,laboratory wares,trading,STN 1508,picric acid,เคมีภัณฑ์,ของใช้ในห้องแล็บ,ของใช้ในห้องแล็ป,กรดพิคริก,สารเคมี,ขายสารเคมี,ขายกรดพิคริก")',
+      $header = array('keywords' => 'STN,chemical,laboratory wares,trading,STN1508,picric acid,เคมีภัณฑ์,ของใช้ในห้องแล็บ,ของใช้ในห้องแล็ป,กรดพิคริก,สารเคมี,ขายสารเคมี,ขายกรดพิคริก")',
                       'description' => 'STN trading company - chemical and laboratory wares business',
-                      'title' => 'STN หน้าผลลัพการค้นหาสินค้า',
+                      'title' => 'STN1508 หน้าผลลัพการค้นหาสินค้า',
                       'category_menu' => $category_menu
                       );
       $index = array('category_menu' => $category_menu,

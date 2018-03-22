@@ -36,7 +36,7 @@
       $message = $this->m_con->mMessage();
       $header = array('keywords' => 'STN,chemical,
                       laboratory wares,
-                      trading,STN 1508,
+                      trading,STN1508,
                       picric acid,
                       เคมีภัณฑ์,
                       ของใช้ในห้องแล็บ,
@@ -46,7 +46,7 @@
                       ขายสารเคมี,
                       ขายกรดพิคริก")',
                       'description' => 'STN trading company - chemical and laboratory wares business',
-                      'title' => 'STN - ห.จ.ก STN 1508 เทรดดิ้ง',
+                      'title' => 'STN1508 - ห.จ.ก STN1508 เทรดดิ้ง',
                       'category_menu' => $category_menu
                       );
       $index = array('category_menu' => $category_menu,
@@ -74,7 +74,7 @@
       }
       $header = array('keywords' => 'STN,chemical,
                       laboratory wares,
-                      trading,STN 1508,
+                      trading,STN1508,
                       picric acid,
                       เคมีภัณฑ์,
                       ของใช้ในห้องแล็บ,
@@ -84,7 +84,7 @@
                       ขายสารเคมี,
                       ขายกรดพิคริก")',
                       'description' => 'STN trading company - chemical and laboratory wares business',
-                      'title' => 'STN - ห.จ.ก STN 1508 เทรดดิ้ง'
+                      'title' => 'STN1508 - ห.จ.ก STN 1508 เทรดดิ้ง'
                       );
       $this->load->view('template/V_Header',$header);
       $this->load->view('V_Login');

@@ -12,17 +12,21 @@
       $feature_brand = $this->m_cat->mBrand();
       $header = array('keywords' => 'STN,chemical,
                       laboratory wares,
-                      trading,STN 1508,
+                      trading,STN1508,
                       picric acid,
+                      ซื้อ กรดพิคริก ได้ที่ไหน,
+                      ซื้อ กรดพิคริก ได้ที่ STN,
                       เคมีภัณฑ์,
                       ของใช้ในห้องแล็บ,
                       ของใช้ในห้องแล็ป,
                       กรดพิคริก,
+                      ซื้อกรดพิคริก,
+                      ขาย กรดพิคริก,
                       สารเคมี,
                       ขายสารเคมี,
                       ขายกรดพิคริก")',
                       'description' => 'STN trading company - chemical and laboratory wares business',
-                      'title' => 'STN1508 - ห.จ.ก STN 1508 เทรดดิ้ง',
+                      'title' => 'STN1508 Homepage - ห.จ.ก STN1508 เทรดดิ้ง',
                       'category_menu' => $category_menu
                       );
 

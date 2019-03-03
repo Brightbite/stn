@@ -77,7 +77,7 @@
     </div>
     <div class="jumbotron bg-light">
       <h1 class="display-4 font-weight-bold text-info">STN 1508</h1>
-      <p class="lead">หจก. เอส.ที.เอ็น.(1508) เทรดดิ้ง จำกัด.</p>
+      <p class="lead">หจก. เอส.ที.เอ็น.(1508) เทรดดิ้ง</p>
       <hr class="my-4">
       <p class="lead">
           <div class="card-body">

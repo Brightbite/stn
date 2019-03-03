@@ -11,6 +11,7 @@ application/logs/*
 
 index.php
 README.txt
+
 application/config/config.php
 application/config/database.php
 .gitignore

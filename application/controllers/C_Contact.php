@@ -7,6 +7,7 @@
       $this->load->helper('url');
       $this->load->model('M_Catalog','m_cat');
       $this->load->model('M_Contact','m_con');
+      $this->load->library('email');
     }
     function index(){
       $category_menu = $this->m_cat->mCategory();
@@ -51,6 +52,7 @@
       date_default_timezone_set("Asia/Bangkok");
       $contDate = date('d');
       $contMonth = date('m');
+      $contMonth2 = date('M');
       $contYear = date('Y');
       $contTime = date('H:i:s');
       $messageDate = $contYear.'-'.$contMonth.'-'.$contDate.'-'.$contTime;
@@ -64,6 +66,40 @@
                              'ContactMessage' => $contactMessage
                             );
       $contactRecord = $this->m_con->mContact($contactDetail);
+
+
+      //SMTP & mail configuration
+      $config = array(
+          'protocol'  => 'smtp',
+          'smtp_host' => 'ssl://smtp.googlemail.com',
+          'smtp_port' => 465,
+          'smtp_user' => 'stn1508web@gmail.com',
+          'smtp_pass' => 'Office15/1',
+          'mailtype'  => 'html',
+          'charset'   => 'utf-8'
+      );
+      $this->email->initialize($config);
+      $this->email->set_mailtype("html");
+      $this->email->set_newline("\r\n");
+
+      //Email content
+      $htmlContent = '<h2>ข้อความใหม่จาก STN website</h2>';
+      $htmlContent .= '<h4> ชื่อผู้ติดต่อ: คุณ '.$contactName.'  บริษัท '.$contactCompany.'</h4>';
+      $htmlContent .= '<h4> วันที่: '.$contDate.' '.$contMonth2.' '.$contYear.' - เวลา: '.$contTime.'</h4>';
+      $htmlContent .= '<h4> ติดต่อกลับ Email: '.$contactEmail.' - Telephone: '.$contactTel.'</h4>';
+      $htmlContent .= '<h4> เรื่อง: '.$contactSubject.'</h4>';
+      $htmlContent .= '<h4> ข้อความ: </h4><p>'.$contactMessage.'</p>';
+
+      $contactList = array($contactEmail, 'stn1508web@gmail.com');
+
+      $this->email->to('stn1508@hotmail.com');
+      $this->email->bcc($contactList);
+      $this->email->from($contactEmail,$contactName);
+      $this->email->subject($contactSubject);
+      $this->email->message($htmlContent);
+
+      //Send email
+      $this->email->send();
 
       $header = array('keywords' => 'STN,chemical,
                                      laboratory wares,
@@ -81,6 +117,7 @@
                       'title' => 'STN1508 หน้าติดต่อ',
                       'category_menu' => $category_menu
       );
+
       $index = array('category_menu' => $category_menu);
       $footer = array('feature_brand' => $feature_brand);
 

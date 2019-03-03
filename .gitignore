@@ -15,4 +15,5 @@ README.txt
 application/config/config.php
 application/config/database.php
 application/controller/C_Contact.php
+C_Contact.php
 .gitignore

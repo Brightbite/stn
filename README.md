@@ -1,4 +1,4 @@
-# stn
+# STN Chemicals - trading company
 
 ## Features
 
